@@ -8,7 +8,8 @@ while True:
 	p.append(name)
 	p.append(price) #8,9行等同於 p = [name, product]
 	products.append(p) #大清單裝小清單_二維清單
-print(products)
 
+for p in products:
+	print(p[0], '的價格是', p[1]) #每一個小清單的第０格都是name,第一格是price
 
 
