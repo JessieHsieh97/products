@@ -12,4 +12,10 @@ while True:
 for p in products:
 	print(p[0], '的價格是', p[1]) #每一個小清單的第０格都是name,第一格是price
 
+#寫入程式
+#生成csv檔可以excel讀取
+with open('products.csv', 'w', encoding = 'utf-8') as f: #將編碼寫為utf-8格式
+	f.write('商品, 價格 \n')
+	for p in products:
+		f.write(p[0] + ',' + p[1] +  '\n')
 
